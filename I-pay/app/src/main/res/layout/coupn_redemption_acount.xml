@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:weightSum="5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/coupon_redemption_account"
+        android:textColor="@color/grey"
+        android:layout_weight=".5"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rg_contacttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/rb_dealer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dealer"
+            android:textColor="@color/grey" />
+
+        <RadioButton
+            android:id="@+id/rb_mechanic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mechanics"
+            android:textColor="@color/grey" />
+
+        <RadioButton
+            android:id="@+id/rb_retailer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Retailer"
+            android:textColor="@color/grey" />
+    </RadioGroup>
+
+    <!-- Geo Search Layout -->
+
+    <LinearLayout
+        android:id="@+id/geolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+      
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/state"
+            android:textColor="@color/grey"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/statespinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/city"
+            android:textColor="@color/grey"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/cityspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/area"
+            android:textColor="@color/grey"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/areaspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+    
+     
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_weight=".5"
+        android:weightSum="4"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/bluelight"
+            android:text="DATE" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:textColor="@color/bluelight"
+            android:text="REF" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:textColor="@color/bluelight"
+            android:text="CREDIT" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:textColor="@color/bluelight"
+            android:text="DEBIT" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_weight=".5"
+        android:weightSum="4"
+        android:background="@android:color/white"
+        android:id="@+id/ll_greaterninty"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_cd_farword"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textColor="@color/bluelight"
+            android:text="Carry Forward(90days)" />
+        
+        <TextView
+            android:id="@+id/tv_ref_farword"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+             android:layout_weight=".5"
+             android:gravity="center"
+             android:textColor="@color/bluelight"
+             android:visibility="invisible"
+            android:text="REF" />
+
+        <TextView
+            android:id="@+id/tv_cd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:textColor="@color/bluelight"
+            android:text="CREDIT" />
+
+        <TextView
+            android:id="@+id/cd_debit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:textColor="@color/bluelight"
+            android:text="DEBIT" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_account"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:scrollbarThumbVertical="@drawable/list_scrollbar"
+        android:background="@android:color/white"
+        android:layout_weight="2.5" >
+    </ListView>
+
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" 
+        android:layout_marginTop="10dp">
+        <Button
+        android:id="@+id/bt_credit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/selector"
+        android:textColor="@android:color/white"
+        android:text="CREDIT BALANCE" />
+         <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+         />
+
+    
+    </LinearLayout>
+
+</LinearLayout>

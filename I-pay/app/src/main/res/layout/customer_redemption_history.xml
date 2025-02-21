@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/rg_searchtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <RadioButton
+                    android:id="@+id/rb_self"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Self"
+                    android:textColor="@color/grey" />
+
+                <RadioButton
+                    android:id="@+id/rb_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Other"
+                    android:textColor="@color/grey" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tV_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/mobilenumber" />
+
+            <EditText
+                android:id="@+id/mobilenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobilenumber"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:textColor="@color/bluelight">
+            </EditText>
+
+            <TextView
+                android:id="@+id/tV_coupon_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/couponcode"
+                />
+
+            <EditText
+                android:id="@+id/coupon_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="11"
+                android:hint="@string/couponcode"
+                android:textColor="@color/bluelight" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tV_UID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/UID" />
+
+            <EditText
+                android:id="@+id/uid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/UID"
+                android:textColor="@color/bluelight" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tV_couponamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/ammount_on_coupon" />
+
+            <EditText
+                android:id="@+id/couponamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bluelight"
+                android:hint="@string/ammount_on_coupon">
+            </EditText>
+
+            <TextView
+                android:id="@+id/tV_amountredeemed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/amount_redeemed" />
+
+            <EditText
+                android:id="@+id/amountredeemed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/amount_redeemed"
+                android:textColor="@color/bluelight" >
+            </EditText>
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/takephoto"
+                        android:text="@string/takephoto"
+                        android:background="@drawable/selector"
+                        android:layout_weight="1"
+                        android:textColor="@color/grey"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/takephotofromgallary"
+                        android:text="@string/capturegallary"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/selector"
+                        android:layout_weight="1"
+                        android:textColor="@color/grey"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp" >
+
+                    <ImageView
+                        android:id="@+id/img_attachment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="86dp"
+                        android:layout_weight="0.93"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_gallery" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/selector5"
+                android:text="@string/submit"
+                android:textColor="@color/grey"
+                android:gravity="center"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

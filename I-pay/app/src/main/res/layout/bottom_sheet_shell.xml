@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   
+<!--<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_margin="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="ContactName "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_contactname" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/g6"
+                android:id="@+id/et_contactname" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Mobile "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_mobile" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/g6"
+                android:id="@+id/et_mobile" />
+            />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="GarageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_garagename" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_garagename"
+                android:textColor="@color/g6"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Address "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_Address" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_Address"
+                android:textColor="@color/g6"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="City "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_City" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_City"
+                android:textColor="@color/g6"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Email "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_Email" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_Email"
+                android:textColor="@color/g6"/>
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+<!--</android.support.v7.widget.CardView>
+   -->
+
+</LinearLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_width="fill_parent"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+      android:background="@drawable/background"
+     >
+    
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/customertrend"
+        android:textColor="@color/grey"
+        android:textSize="20sp" />
+    <ScrollView
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_below="@+id/header"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <include layout="@layout/trend_filter_layout"/>
+        
+        <Button  
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search"
+            android:text="@string/search"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@drawable/selector"
+            android:textColor="@color/grey" 
+              />
+        
+        
+         <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+             android:weightSum="3" >
+            
+         
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:text="@string/dealer"
+                    android:textColor="@color/custom_blue" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:text="@string/Retailer"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                      android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/mechanics"
+                    android:textColor="@color/custom_blue" />
+                
+                
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+            
+            <include layout="@layout/customer_trend_list_celll"/>
+
+        </LinearLayout>
+        
+     <ListView
+         android:layout_marginTop="3dp"
+         android:id="@android:id/list"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:cacheColorHint="@color/cachecolour"
+         android:listSelector="@drawable/list_selector" >
+         
+     </ListView>
+     
+     
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/grey"
+        android:weightSum="3">
+        
+    
+    
+      <LinearLayout android:layout_width="0dp"
+          android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+             android:weightSum="4" >
+            
+        
+                <TextView
+                    android:id="@+id/totalamount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="@string/total"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                      android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:text="@string/location"
+                    android:textColor="@color/custom_blue" />
+                
+                  <TextView
+                    android:id="@+id/dlrqty"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textColor="@color/custom_blue" />
+                  
+                  
+                  <TextView
+                    android:id="@+id/dlrvalue"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textColor="@color/custom_blue" />
+
+        </LinearLayout>
+      
+       <LinearLayout android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:layout_marginLeft="2dp"
+            android:orientation="horizontal"
+             android:weightSum="4" >
+            
+         
+                <TextView
+                    android:id="@+id/position6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textSize="15sp"
+                     android:visibility="invisible"
+                    android:text="@string/name"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position7"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                      android:layout_height="match_parent"
+                    android:gravity="center"
+                     android:visibility="invisible"
+                    android:text="@string/location"
+                    android:textColor="@color/custom_blue" />
+                
+                  <TextView
+                    android:id="@+id/retqty"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textColor="@color/custom_blue" />
+                  
+                  
+                  <TextView
+                    android:id="@+id/retvalue"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textColor="@color/custom_blue" />
+
+        </LinearLayout>
+        
+      
+       <LinearLayout android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+             android:weightSum="4" >
+            
+         
+         
+                <TextView
+                    android:id="@+id/position10"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textSize="15sp"
+                     android:visibility="invisible"
+                    android:text="@string/name"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position11"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                      android:layout_height="match_parent"
+                    android:gravity="center"
+                     android:visibility="invisible"
+                    android:text="@string/location"
+                    android:textColor="@color/custom_blue" />
+                
+                  <TextView
+                    android:id="@+id/mechqty"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textColor="@color/custom_blue" />
+                  
+                  
+                  <TextView
+                    android:id="@+id/mechvalue"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textColor="@color/custom_blue" />
+
+        </LinearLayout>
+</LinearLayout>
+     
+     
+    </LinearLayout>
+    
+
+</ScrollView>
+</RelativeLayout>
+
+
+

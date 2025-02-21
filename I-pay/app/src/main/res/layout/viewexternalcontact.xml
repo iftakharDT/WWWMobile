@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+     <TextView
+        android:id="@+id/welcometext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/externalcontact"
+        android:textColor="@color/grey"
+        />
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="@string/search"
+                android:maxLines="1"
+                android:textColor="@color/custom_blue"
+                android:layout_below="@+id/welcometext"
+		    >
+            </EditText>
+
+    <TableLayout
+        android:id="@+id/tableview"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/search"
+        android:background="@color/grey"
+        android:stretchColumns="0,1,2,3" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@color/grey" >
+
+            <TextView
+                android:id="@+id/position1"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/custom_blue"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/position2"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:text="Mobile"
+                android:textColor="@color/custom_blue"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/position3"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:text="Email"
+                android:textColor="@color/custom_blue"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/position4"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:text="Dob"
+                android:textColor="@color/custom_blue"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/tableview"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="singleChoice" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/footer"
+        android:textColor="@color/grey" />
+
+</RelativeLayout>

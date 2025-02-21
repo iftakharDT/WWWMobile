@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="spicer_us">Auto Action</string>
+    <string name="am_customer_terretory">AM Territory \n Customer</string>
+    <string name="app_name">I-pay</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="password">Password</string>
+    <string name="username">User Name</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="title">iPay</string>
+    <string name="footer">We are the first, We are the future.</string>
+    <string name="addexternalcontact">Add Dealer Contact</string>
+    <string name="editexternalcontact">Edit Dealer Contact</string>
+    <string name="externalcontact">Dealer Contact</string>
+    <string name="error2">Complete Missing Field </string>
+    <string name="error3">please enter blank/invalid entry </string>
+    <string name="error4">Network/Sever Busy try again</string>
+    <string name="error6">Data upload Failed</string>
+    <string name="error7">Your device seems to be offline.Please check your network connection and try again.</string>
+    <string name="error8">Please select valid date.Date can three days old from current date.</string>
+    <string name="select">Select Option</string>
+    <string name="message1">Authenticating.......</string>
+    <string name="message4">No Data Exist</string>
+    <string name="message5">Data Uploaded Successfully</string>
+    <string name="message6">Mobile Number Already Exist</string>
+    <string name="message7">This mobile no is not registered.Would you like to continue?</string>
+    <string name="contacttype">Contact Type</string>
+    <string name="cfa_dealer_mg_spinner">Cfa/Dealer/MG value</string>
+    <string name="dealer">Dealer</string>
+    <string name="am_stock">AM</string>
+    <string name="cfa">CFA</string>
+    <string name="contactname">Conatct Name</string>
+    <string name="mobilenumber">Mobile Number</string>
+    <string name="emailid">Email Id</string>
+    <string name="alternatemob">Alternate Mobile Number</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="department_error"> Please select department</string>
+    <string name="country">Country</string>
+    <string name="zone">Zone</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="area">Area</string>
+    <string name="pincode">Pincode</string>
+    <string name="streetaddress">Street Address</string>
+    <string name="add">Add</string>
+    <string name="save">Save</string>
+    <string name="datefoemate">MM/DD/YYYY</string>
+    <string name="viewcontact">View Contact Details</string>
+    <string name="primary">Primary</string>
+    <string name="secondary">Secondary</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="welcome">Welcome</string>
+    <string name="coupon">Coupon</string>
+    <string name="scan">Scan</string>
+    <string name="redeemed">Redeemed</string>
+    <string name="entercoupon">Add/scan coupon code</string>
+
+    <string name="search">Search</string>
+    <string name="searchcontact">Search Contact</string>
+    <string name="retailercontacttype">Contact Type</string>
+    <string name="Retailer">Retailer</string>
+    <string name="addretailercontact">Customer Registration</string>
+    <string name="editretailercontact">Edit Retailer Contact</string>
+    <string name="retailercontact">Retailer Contact</string>
+    <string name="productsegment">Product Segment</string>
+    <string name="productoe">Product OE</string>
+    <string name="authorized">Authorized</string>
+    <string name="producttype">Product Type</string>
+    <string name="productsubtype">Product Sub Type</string>
+    <string name="productapplication">Product Application</string>
+    <string name="bankaccountholder">Bank Account Holder</string>
+    <string name="bankname">Bank Name</string>
+    <string name="branchname">Branch Name</string>
+    <string name="bankifsc">Bank IFSC Code</string>
+    <string name="bankaccounttype">Bank Account Type</string>
+    <string name="bankaccountnumber">Bank Account Number</string>
+    <string name="mechanics">Mechanic</string>
+    <string name="mg">MG</string>
+    <string name="account">Account</string>
+    <string name="couponholdermobile">Mobile Number</string>
+    <string name="bankcity">Select Bank City</string>
+    <string name="bankdetails">Want To Fill Bank Details</string>
+    <string name="notregister">If Not Registered?</string>
+    <string name="register">Register</string>
+    <string name="phonenonotregister">Phone Number Not Register </string>
+    <string name="usernotregister">Invalid UserName/Password</string>
+    <string name="accountlocked">Your Account has been Locked. Please contact to Area Manager.</string>
+    <string name="loginerroe">Login Error</string>
+    <string name="loadingerror">Error occurred while loading the data! Please try again.</string>
+    <string name="cashcollected">Cash </string>
+    <string name="couponmsg">Coupon </string>
+    <string name="couponmsg1">Coupon Does Not Exist</string>
+    <string name="couponmsg2">Invalid coupon code</string>
+    <string name="couponmsg3">This is not a Dealer Type Coupon</string>
+    <string name="couponmsg4">This is not a Mechanic Type Coupon</string>
+    <string name="couponmsg5">Coupon has Already been Redeemed</string>
+    <string name="couponmsg6">Coupon is not Activated yet..</string>
+    <string name="couponmsg7">Coupon Redeemed Successfully</string>
+    <string name="viewexternal">View Dealer Contact</string>
+    <string name="addcontact">Add Dealer Contact</string>
+    <string name="viewretailer">View Retailer/Mechanic</string>
+    <string name="addretailer">Add Retailer/Mechanic</string>
+    <string name="dealersale">Dealer Sale</string>
+    <string name="voucherno">Voucher No</string>
+    <string name="partyname">Party Name</string>
+    <string name="datehint">DD/MM/YYYY</string>
+    <string name="date">Date</string>
+    <string name="itemcode">Item Code</string>
+    <string name="itemname">Item Name</string>
+    <string name="product_code">Product Name</string>
+    <string name="check">Check</string>
+    <string name="coupon_value">Coupon Value</string>
+    <string name="avg_value">Average\n Value</string>
+    <string name="sale_value">Sale\n Value</string>
+    <string name="quantity">Quantity</string>
+    <string name="clasification">Classification</string>
+    <string name="additem">Add Item</string>
+    <string name="productcode">Product Code</string>
+    <string name="productname">Product Name</string>
+    <string name="unitprice">Unti Price</string>
+    <string name="stockqty">Stock Qty</string>
+    <string name="remainqty">Remain Qty</string>
+    <string name="amount">Amount</string>
+    <string name="cd_yn">CD Y/N</string>
+    <string name="cancel">Cancel</string>
+    <string name="district">District</string>
+    <string name="verificationtype">Verification Doc Type</string>
+    <string name="verificationdoc">Document details</string>
+    <string name="acctype">Account Type</string>
+    <string name="garage">Garage</string>
+    <string name="individual">Individual</string>
+    <string name="banknamecity">Bank Name City</string>
+    <!-- <string name="bankcity">Bank City</string> -->
+    <string name="ifsc">IFSC</string>
+    <string name="banksearch">Bank Search</string>
+    <string name="garagename">Garage Name</string>
+
+    <color name="g">#291c29</color>
+    <color name="g1">#462446</color>
+    <color name="g2">#673653</color>
+    <color name="g3">#b05f6d</color>
+    <color name="g4">#de8275</color>
+    <color name="g5">#d19427</color>
+    <color name="g6">#2e806f</color>
+
+    <string name="department">Department</string>
+    <string name="designation">Designation</string>
+    <string name="areadetails">Area Details</string>
+    <string name="visitdetails">Visit Details</string>
+    <string name="partytype">Party Type </string>
+    <string name="party">Party</string>
+    <string name="purposeofvisit">purpose of visit</string>
+    <string name="visitnotes">Meeting Notes</string>
+    <string name="saletype">Sale Type</string>
+    <string name="sale">Sale</string>
+    <string name="returntype">Return</string>
+    <string name="searchitem">Search item</string>
+    <string name="stockquantity">Stock Quantity</string>
+    <string name="btsbtoclasification">BTO/BTS Classification</string>
+    <string name="rygstatus">RYG Status</string>
+    <string name="loadproductdetails">Loading product details....</string>
+    <string name="loadsalelist">Loading already sold data....</string>
+    <string name="RemoveItem">Remove Item</string>
+    <string name="submit">Submit</string>
+    <string name="availability">Availability</string>
+    <string name="dateerror">This date is not applicable.</string>
+    <string name="uploaddata">Updating data please wait....</string>
+    <string name="salereturn">Sale/Return</string>
+    <string name="finalsubmit">Submit</string>
+    <string name="editsale">Edit Sale</string>
+    <string name="all">All</string>
+
+    <!-- Edit sale string constant -->
+
+    <string name="saleinvoiceno">Sales Invoice No</string>
+    <string name="patryname">Party Name</string>
+    <string name="saledate">Sale Date</string>
+    <string name="noofitem">No Of Items</string>
+    <!-- Edit prodcut Screen -->
+    <string name="serviceinvoiceno">Sales Invoice No</string>
+    <string name="sellingprice">Selling Price</string>
+    <string name="remainquantity">Remain Quantity</string>
+    <string name="saleamount">Sale Amount</string>
+    <string name="deleteitems">Delete Item(s)</string>
+    <!-- <string name="finalsubmit">Final Submit</string> -->
+    <string name="selectproduct">Select</string>
+    <string name="dummytext">abcd</string>
+
+    <!-- Dealer manual Order layout -->
+    <string name="placeorder">Place Order</string>
+    <string name="dealername">Dealer Name</string>
+    <string name="dealersalemanualorder">Dealer Sale \n Manual Order</string>
+    <string name="dealer_gitgood_reciept">Dealer GIT and Good\n Reciept Enty</string>
+    <string name="pending_calls">Pending\n Calls</string>
+    <string name="done">Done</string>
+    <string name="totalamount">Total Amount</string>
+    <string name="discount">Discount</string>
+    <string name="netamount">Net Amount</string>
+    <string name="areamanagervisitlog">Area Manager Visit Log</string>
+    <string name="meetingnotes">Metting Notes</string>
+    <string name="enddate">End Time</string>
+    <string name="startdate">Call Start Time</string>
+    <string name="time">Time</string>
+    <string name="starttime">Start Time</string>
+    <string name="datenotapplicable">This date is not applicable!</string>
+    <string name="question">Question</string>
+    <string name="cform">CForm</string>
+    <string name="selectinvoice">Please Select Invoice</string>
+    <string name="invoicewiseproductdetails">Invoice wise prodcut details</string>
+    <string name="invoiceno">Invoice No</string>
+    <string name="orderno">Order No</string>
+    <string name="invoicetotal">Invoice Total</string>
+    <string name="noofinvoice">No of invoice</string>
+    <string name="noofproducts">No of product(s)</string>
+    <string name="totalquantity">Total Quantity</string>
+    <string name="totalvolume">Total Volume</string>
+    <string name="pretaxamount">Pre Tax Amount</string>
+    <string name="bydealerdetails">By Dealer Details</string>
+    <string name="cformno">C Form No</string>
+    <string name="cformdate">C Form Date</string>
+    <string name="cformvalue">C Form Value</string>
+    <string name="modeofdispatch">Mode Of Dispatch</string>
+    <string name="nameofperson">Name Of Person</string>
+    <string name="handoverdate">HandOver Date</string>
+    <string name="courierrefno">Courier Referance No</string>
+    <string name="nameofcompany">Name Of Company</string>
+    <string name="dateofdisp">Date Of Dispatch</string>
+    <string name="byfieldagent">By Area Manager</string>
+    <string name="recieved">Received</string>
+    <string name="cformdeliveredtocfa">C Form Delivered To CFA</string>
+    <string name="bycfa">By CFA</string>
+    <string name="recieveddate">Received Date</string>
+    <string name="cfaname">CFA Name</string>
+    <string name="calculate">Get Details</string>
+    <!-- <string name="cformpending">C Form Pending</string> -->
+    <string name="cformpending">Outstanding</string>
+
+    <!-- Goods Recieved String -->
+    <string name="idcode">ID/Code</string>
+    <string name="name">Name :</string>
+    <string name="dispatchqnty">Dispatch Qty</string>
+    <string name="recievedqty">Received Qty</string>
+    <string name="damageqty">Damage Qty</string>
+    <string name="discofdamagegood">Discription Of Damage Goods</string>
+    <string name="shortqty">Short Qty</string>
+    <string name="netqty">Net Qty</string>
+    <string name="goodsreceiveddealer">Goods Received Dealer</string>
+    <string name="couponcode">Coupon Code</string>
+    <string name="status">Approval Code/Reason of rejection</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="filter">Filter</string>
+    <string name="month">Month</string>
+    <string name="am">Area Manager</string>
+    <string name="Summarymis">Summary MIS</string>
+
+    <!-- Area Manager -->
+    <string name="dealerOutstandingCFormCredit">Outstanding \n C Form Credit</string>
+    <string name="direct_dealer_target_scheme_wise">Direct Dealer-Target vs. Actual Scheme wise</string>
+    <string name="secondary_sale">S.\nSale</string>
+    <string name="primary_sale">P.\nSale</string>
+    <string name="sales">Sales FTM</string>
+    <string name="fitment">Fitment</string>
+    <string name="order">Order</string>
+    <string name="outstanding">Outstanding</string>
+    <string name="inventorygap">Inventory</string>
+    <string name="calls">Calls</string>
+    <string name="regddealer">Regd.</string>
+    <string name="regdmechanic">ActTM</string>
+    <string name="target">Target</string>
+    <string name="fty">Sales FTY</string>
+    <string name="actual">Actual</string>
+    <string name="pending">Pending</string>
+    <string name="un_verified">Unverified</string>
+    <string name="ftm">FTM</string>
+    <string name="od">OD</string>
+    <string name="locks">Locks</string>
+    <string name="total">Total</string>
+    <string name="gotit">Next</string>
+    <string name="actionmenu">Action Menu</string>
+    <string name="dailycalls">Daily Calls</string>
+    <string name="dailyreportvisitdetail">Pending Calls</string>
+    <string name="customerregistration">Registration</string>
+    <string name="manualorder">Manual Order</string>
+    <string name="unverifiedcustomer">Unverified Customer</string>
+    <string name="datamenu">Data Menu</string>
+    <string name="stock">Stock</string>
+    <string name="catalogue">Catalogue</string>
+    <string name="customermaster">Customer Master</string>
+    <string name="pendingreestration">Pending \nRegistration</string>
+    <string name="callplanner">Call Planner</string>
+    <string name="schemestatus">Scheme\n Status</string>
+    <string name="stockreport">Stock  Report</string>
+    <string name="salesreport">Sales Report</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="customer">Customer</string>
+    <string name="timeto">Time To</string>
+    <string name="timefrom">Time From</string>
+    <string name="mettingnotes">Metting Notes</string>
+    <string name="rollovermenu">Product complain roll over menu</string>
+    <string name="please_select_cfa_dealer_mg">Please select CFA/Dealer/MG</string>
+    <string name="partno">Part No</string>
+    <string name="complainapproved">Complain Approved</string>
+    <string name="companyname">Company Name</string>
+    <string name="selectcategory">Select Category</string>
+    <string name="purchasefty">Purchase FTY</string>
+    <string name="purchaseftm">Purchase FTM</string>
+    <string name="runningtargetactual">RT Actual</string>
+    <string name="today">Today</string>
+    <string name="duedate">DD</string>
+    <string name="check_number">Check Number</string>
+    <string name="overdue">OD</string>
+    <string name="creditstatus">Credit Status</string>
+    <string name="ballimit">Bal Limit</string>
+    <string name="noofcheckinhand">NOCIH</string>
+    <string name="atmdetails">Want to fill ATM details</string>
+    <string name="pleaseentercardno">Please enter card No</string>
+    <string name="mechanicaccount">Account information for this mechanic is not available.</string>
+    <string name="OD">OD</string>
+    <string name="creditlimit">Credit Limit</string>
+    <string name="creditlockreason">Credit Lock Reason</string>
+    <string name="show">Show</string>
+
+    <!-- Direct Dealer -->
+    <!-- Direct Dealer Target vs actual -->
+
+    <string name="dealer_purchase_history">Dealer Purchase History</string>
+    <string name="dealer_currentinventry">Current inventory with \n RYG</string>
+    <string name="partnoactual">Part No/ Group</string>
+    <string name="shemename">Scheme Name</string>
+    <string name="tgt">TGT</string>
+    <string name="act">ACT</string>
+    <string name="inconachievement">Incon \nAchievement</string>
+    <!--
+    <string name="from">From</string>
+    <string name="to">To</string>
+    -->
+    <string name="billno">Bill No</string>
+    <string name="dealerdate">Date</string>
+    <string name="dailysalisscaninput">Daily Sales Scan/Input</string>
+    <string name="manualorderinput">Manual Order Input</string>
+    <string name="couponredemptionself">Coupon Redemtion Self</string>
+    <string name="couponredemptionmech">Coupon Redemption Mechanic</string>
+    <string name="purchasehistory">Purchase History</string>
+    <string name="gitandgoodsrecieptentry">GIT and Goods Reciept Entry</string>
+    <string name="currentinventrywithryg">Current Inventory with RYG</string>
+    <string name="outstandingcform">Outstanding/C-FORM/Credit Limit</string>
+    <string name="Targetvsactualscemewise">Target v/s Actual Scheme wise</string>
+    <string name="blabkcheckstatus">Blank Cheque Status</string>
+
+    <!-- Retailer -->
+    <string name="relationShipMngr">Relationship Manager</string>
+    <string name="location">Location</string>
+    <string name="paymenttransfercradit">Payment Transfer Credit</string>
+    <string name="registermechanic">Register Mechanic</string>
+    <string name="couponredemptionaccount">Coupon Redemption Account</string>
+    <string name="directdealersearch">Direct Dealer Search</string>
+    <string name="segment">Segment</string>
+    <string name="product_text">Product</string>
+    <string name="oe_text">OE</string>
+    <string name="oe">OE</string>
+    <string name="application">Application</string>
+    <string name="get">Get</string>
+    <string name="refresh">Refresh</string>
+    <string name="previous_quantity">LY\nQuantity</string>
+    <string name="previous_value">LY\n Value</string>
+    <string name="current_quantity">CY Quantity</string>
+    <string name="current_value">CY\nValue</string>
+    <string name="item">Item</string>
+    <string name="value">Value</string>
+    <string name="tgtfty">TgtFty</string>
+    <string name="actfty">ActFty</string>
+    <string name="fitmentsalesLefty">Fitment Sales Left</string>
+    <string name="dealersalesfty">Dealer Sale fty</string>
+    <string name="askingrateftm">Asking Rate fty</string>
+    <string name="actualftm">Actual fty</string>
+    <string name="fitmentsalesftm">F.\nSales</string>
+    <string name="dealersalesftm">Dealer Sales ftm</string>
+    <string name="pendingorder">P.Order</string>
+    <string name="takephoto">Capture Photo</string>
+    <string name="capturegallary">Choose from gallary</string>
+    <string name="address">Address</string>
+    <string name="customertype">Customer Type</string>
+    <string name="idproofe">Id Proofe</string>
+    <string name="addressproofe">Address Proofe</string>
+    <string name="bankproofe">Bank proofe</string>
+    <string name="photoproofe">Photo Proofe</string>
+    <string name="productfilter">Product Filter</string>
+    <string name="cfa_dealer_mg">CFA/Dealer/MG</string>
+    <string name="customertrend">Customer\n Trend</string>
+    <string name="trendType">Trend Type</string>
+    <string name="producttrend">AM Stock\n Report</string>
+    <string name="am_stock_report">AM Stock\n Report</string>
+    <string name="productdetailswithstock">Product Details With Stock </string>
+    <string name="targetStock">Target Stock</string>
+    <string name="currentstock">Current \n Stock </string>
+    <string name="red">Red</string>
+    <string name="yellow">Yellow</string>
+    <string name="green">Green</string>
+    <string name="solldqty">Sold Quantity</string>
+    <string name="geographysearch">Geography Search</string>
+    <string name="mobilenumbersearch">Mobile No Search</string>
+    <string name="remarks">Remarks</string>
+    <string name="endtime">Call End Time</string>
+    <string name="customervisit">Customer \nVisit</string>
+    <string name="clearList">Clear List</string>
+    <string name="changepassowrd">Please Change Password</string>
+    <string name="oldpassword">Old Password</string>
+    <string name="newpassword">New Password</string>
+
+    <!-- Unverified customer -->
+
+
+    <!-- Time Trend MIS -->
+
+    <string name="timetrend">Time \nTrend</string>
+    <string name="contactfilter">Contact Filter</string>
+    <string name="externalcustomermaster">External Customer Master</string>
+    <string name="birthday">Birth Day</string>
+    <string name="avgcallsperyear">Average calls per year</string>
+    <string name="lastcalldate">Last call date</string>
+    <string name="customervaluepermonthavg">Customer value per month average</string>
+    <string name="customervaluetm">Customer value TM</string>
+
+    <!-- ********************************** -->
+    <string name="Back">Back</string>
+    <string name="Next">Next</string>
+    <string name="Previous_call_details">Previous Call Details</string>
+    <string name="share_od_file">Share OD File</string>
+    <string name="date_from"> Date From</string>
+    <string name="date_to">Date To</string>
+    <string name="inventry">Inventry</string>
+    <string name="git">GIT</string>
+    <string name="redgap">RGap</string>
+    <string name="yellowgap">YGap</string>
+    <string name="greengap">GGap</string>
+    <string name="outstading">Out-\nstanding</string>
+    <string name="overdues">Over \nDue</string>
+    <string name="oddays">OD>30</string>
+    <string name="pendingcform">Pending C-forms</string>
+
+    <!-- am_call_planner -->
+
+    <string name="am_call_planner">AM Call \n Planner</string>
+    <string name="am_call_planner_details">AM Call Planner Details</string>
+    <string name="retailer_direct_dealer_search">Retailer Direct \n Dealer Search</string>
+    <string name="unused_check">Un Used </string>
+    <string name="used">Used</string>
+    <string name="blocked">Blocked</string>
+
+    <string name="coupon_account">No dues</string>
+    <string name="mannual_order">Manual Order</string>
+    <string name="customer_code">Customer Code</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="no_data">NO DATA</string>
+
+    <!-- Dealer One line summary -->
+    <string name="dealer_oneline_summary">Dealer One line Summary</string>
+    <string name="delaer_oneline_am_name">AM Name</string>
+    <string name="dealer_oneline_dealer_code">Dealer Code</string>
+    <string name="dealer_oneline_dealership_name">DealerShip Name</string>
+    <string name="dealer_oneline_total_outstanding">Total Outstanding</string>
+    <string name="delaer_oneline_Current">Current</string>
+    <string name="dealer_oneline_OD_UPTO_30">OD UPTO 30</string>
+    <string name="dealer_oneline_OD_less_60">OD >60</string>
+    <string name="dealer_oneline_OD_less_30">OD >30</string>
+    <string name="document_type">Document Type</string>
+    <string name="balance_amount">Balance Amount</string>
+    <string name="customer_visit_diary">Customer Visit Diary</string>
+    <!-- AM One line summary -->
+    <string name="am_oneline_summary">Am One line Summary</string>
+    <string name="pending_order">Pending Order</string>
+    <string name="salesistorytill_LM">Sales History till LM</string>
+    <string name="rm_mm_salesthismonth">Sales History For TM</string>
+    <string name="am_visit_diary">AM Visit Diary</string>
+    <string name="mechaniregisterbutaccountnotavaible">Account information for this mechanic is not available. Redemption will be in cash mode</string>
+
+
+    <!-- RM-MM new Design Name summary -->
+
+    <string name="visit_log">VISIT LOG</string>
+    <string name="sale_mm_rm">SALES</string>
+    <string name="customer_visit">Customer Visit</string>
+    <string name="outstanding_mm_rm">OUTSTANDING</string>
+    <string name="order_mm_rm">ORDER</string>
+    <string name="stock_mm_rm">STOCK</string>
+    <string name="dealer_daily_action">DEALER DAILY ACTION</string>
+    <string name="coupon_mm_rm">COUPON</string>
+    <string name="daily_action_mm_rm">DEALER DAILY ACTION</string>
+    <string name="mytopten_mm_rm">MY TOP TEN</string>
+    <string name="dealer_mm_rm">DEALERS</string>
+    <string name="part_mm_rm">PARTS</string>
+    <string name="spicer_catalogue_mm_rm">CATALOGUE</string>
+    <string name="spicer_catalogue_sale_activity">SALE ACTIVTIY</string>
+
+
+    <string name="couponredemtion">Coupon Redemption</string>
+    <string name="coupon_redemption_account">Coupon Redemption Account</string>
+    <string name="coupon_complain">Coupon Complain</string>
+    <string name="coupon_complain_history">Coupon Complain History</string>
+    <string name="coupon_redemption_history">Coupon Redemption History</string>
+
+
+    <string name="Self">Self</string>
+    <string name="Other">Other</string>
+    <string name="UID">UID</string>
+    <string name="ammount_on_coupon">Amount On Coupon*</string>
+    <string name="amount_redeemed">  Amount Redeemed*</string>
+
+    <string name="click_to_add_parts"><a href="">Click to Add Parts</a></string>
+    <string name="pendingcode">P.Code</string>
+    <string name="desc">Desc</string>
+    <string name="remove">Remove</string>
+
+
+    <string name="action_search">Search</string>
+    <string name="search_hint">Type name…</string>
+    <string name="distance">"<a href=''> Distance </a>"</string>
+    <string name="call_dialog_title">Call Started At</string>
+    <string name="call_end_message">Your call will be automatically closed in... </string>
+
+    <string name="unclosed_call_title">Your last call was not closed properly. Below is the detail</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="last_call">Last Call</string>
+    <string name="other_activity">Other Activity</string>
+    <string name="primary_order_collected">Primary Order Collected </string>
+    <string name="secondary_order_collected">Secondary Order Collected </string>
+
+
+</resources>

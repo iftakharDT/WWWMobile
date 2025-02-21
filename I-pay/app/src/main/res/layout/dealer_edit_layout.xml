@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent" >
+    
+    
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editsale"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/grey"
+        android:textStyle="bold" />
+      
+     <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+        
+         
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+     
+      <RadioGroup
+                android:id="@+id/rg_dealeredit"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:weightSum="3"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioBtall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:checked="true"
+                    android:text="@string/all" />
+                
+                  <RadioButton
+                    android:id="@+id/radioBtbsale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                 
+                    android:text="@string/sale" />
+
+                <RadioButton
+                    android:id="@+id/radioBtbreturn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textColor="@color/grey"
+                    android:text="@string/returntype" />
+
+            </RadioGroup>
+            
+      
+       <LinearLayout
+                android:id="@+id/layoutdob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:weightSum="1" >
+                
+                <Button
+                    android:id="@+id/search"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector"
+                    android:text="@string/search"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:width="100dp" >
+                </Button>
+            </LinearLayout>
+            <TableLayout
+                android:id="@+id/tableview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:layout_margin="5dp"
+                android:stretchColumns="0,1,2,3,4" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/grey" >
+
+                    <TextView
+                        android:id="@+id/position1"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey"
+                        android:gravity="center"
+                        android:text="@string/saleinvoiceno"
+                        android:textColor="@color/custom_blue" />
+
+                    <TextView
+                        android:id="@+id/position2"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey"
+                        android:gravity="center"
+                        android:text="@string/partyname"
+                        android:textColor="@color/custom_blue" />
+
+                    <TextView
+                        android:id="@+id/position3"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey"
+                        android:gravity="center"
+                        android:text="@string/saledate"
+                        android:textColor="@color/custom_blue" />
+
+                    <TextView
+                        android:id="@+id/position4"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey"
+                        android:gravity="center"
+                        android:text="@string/noofitem"
+                        android:textColor="@color/custom_blue" />
+
+                    <TextView
+                        android:id="@+id/position5"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey"
+                        android:gravity="center"
+                        android:text="@string/amount"
+                        android:textColor="@color/custom_blue" />
+
+                </TableRow>
+            </TableLayout>
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:listSelector="@drawable/list_selector"
+                android:choiceMode="singleChoice" >
+            </ListView>
+     
+	</LinearLayout>
+	</ScrollView>
+    <!--  <TextView
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/footer"
+        android:textColor="@color/grey" /> -->
+</RelativeLayout>

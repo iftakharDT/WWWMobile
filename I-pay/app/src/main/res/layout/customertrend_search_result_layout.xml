@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    
+     <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+             android:weightSum="5" >
+            
+         
+            <TextView
+                    android:id="@+id/position1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:text="@string/customertype"
+                    android:textColor="@color/custom_blue" />
+                <TextView
+                    android:id="@+id/position2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:text="@string/name"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                      android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/location"
+                    android:textColor="@color/custom_blue" />
+                
+                  <TextView
+                    android:id="@+id/position4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:text="@string/quantity"
+                    android:textColor="@color/custom_blue" />
+                  
+                  
+                  <TextView
+                    android:id="@+id/position5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:text="@string/value"
+                    android:textColor="@color/custom_blue" />
+
+        </LinearLayout>
+        
+     <ListView
+         android:layout_marginTop="3dp"
+         android:id="@android:id/list"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:cacheColorHint="@color/cachecolour"
+         android:listSelector="@drawable/list_selector" >
+         
+     </ListView>
+     
+     
+     <RelativeLayout android:layout_width="fill_parent"
+         android:layout_height="40dp"
+         >
+          <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:gravity="center"
+         android:textStyle="bold"
+         android:layout_alignParentLeft="true"
+         style="@style/TextTheme"
+         android:text="@string/total"/>
+         
+          
+      <TextView
+          android:id="@+id/totalamount" 
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:gravity="center"
+         android:layout_alignParentRight="true"
+         style="@style/TextTheme"/>
+     </RelativeLayout>
+    
+    
+    
+
+</LinearLayout>

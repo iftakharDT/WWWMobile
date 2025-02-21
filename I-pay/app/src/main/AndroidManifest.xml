@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arcis.vgil">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".autologout.IPLApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ipay"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme">
+        <activity android:name=".trackapp.activity.CallingScreenDetail"></activity>
+        <activity
+            android:name=".activity.Summary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MarketingTeamDasboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- MIS Summary DirectDealer -->
+        <activity
+            android:name=".activity.UserSummaryDirectDealer"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- UserSummaryAM -->
+        <activity
+            android:name=".activity.UserSummaryAM"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- UserSummaryRetailer -->
+        <activity
+            android:name=".activity.UserSummaryRetailer"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- UserSummaryMechanicActivity -->
+        <activity
+            android:name=".activity.UserSummaryMechanicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.ViewExternalContact"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddExternalContact"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ViewAll_AM"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- ViewAll_directDealerActivity -->
+        <activity
+            android:name=".activity.ViewAll_directDealerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- ViewAll_RetailerActivity -->
+        <activity
+            android:name=".activity.ViewAll_RetailerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ViewRetailerContact"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddRetailerContact"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BankSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DealerSaleFragmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.DealerSale"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditProductActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" /> <!-- Area Manager visit Log Activity -->
+        <activity
+            android:name=".activity.AreaManagerVisitLogActivity"
+            android:configChanges="orientation|keyboardHidden" /> <!-- CForm Activity -->
+        <activity
+            android:name=".activity.CFormActivity"
+            android:configChanges="orientation|keyboardHidden" /> <!-- C Form Pending Activity -->
+        <activity
+            android:name=".activity.CFormPendingActivity"
+            android:configChanges="orientation|keyboardHidden" /> <!-- Goods Received Dealer Activity -->
+        <activity
+            android:name=".activity.GoodsReceivedDealerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- Edit Goods Received Dealer Activity -->
+        <activity
+            android:name=".activity.EditGoodsReceivedActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- DailyCallsActivity -->
+        <activity
+            android:name=".activity.DailyCallsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- DailyCallsReportActivity -->
+        <activity
+            android:name=".activity.DailyCallsReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- UnverifiedCustomerActivity -->
+        <activity
+            android:name=".activity.UnverifiedCustomerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- DocumentImageCaptureActivity -->
+        <activity
+            android:name=".activity.DocumentImageCaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- CustomerTrendActivity -->
+        <activity
+            android:name=".activity.CustomerTrendActivity"
+            android:configChanges="orientation|keyboardHidden" /> <!-- CustomerTrendMISScreen2 -->
+        <activity
+            android:name=".activity.CustomerTrendMISScreen2"
+            android:configChanges="orientation|keyboardHidden" /> <!-- ProductTrendActivity -->
+        <activity
+            android:name=".activity.ProductTrendActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- ProductTrendMISScreen2Activity -->
+        <activity
+            android:name=".activity.ProductTrendMISScreen2Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- Customer_visit_metting_Activity -->
+        <activity
+            android:name=".activity.Customer_visit_metting_Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- ChangePasswordActivity -->
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- TimeTrendMISActivity -->
+        <activity
+            android:name=".activity.TimeTrendMISActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExternalCustomerDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AMQuestionarePart"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PendingCalls"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AmStockReport"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AmSaleReport"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AmCallPlanner"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DealerOutstandingCFormCredit"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DealerCurrenInventoryRYG"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DealerTargetVsActualscheme"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DelaerMannualOrderActivityTwo"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DirectDealerMannualOrderThree"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DirectDealerGitGoodReciept"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DirectDealerBlankCheck"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AmOntstandingCFormCredit"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AmOutstandingCFormCreditResult"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DealerPurchageHistory"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AmCustomerMaster_Fitment"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AmCustomerMaster_FitmentDetails"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AmTerettoryCustomersList"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DirectDealerOutstandingCFormCreditResult"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AmCallPlannerDetails"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Retailor_Direct_Dealer_Search"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CouponRedemptionAccount"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserSummaryMM"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.UserSummaryRM"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.ViewAll_MM_RM"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RM_MM_SaleReport"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RM_MM_Stock_Report"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RM_MM_CustomerMaster_Fitment"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RM_MM_ExternalContactMaster"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RM_MM_OutStandingCForm_Credit_New"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RM_MM_PedingOrder"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RM_MM_PendingOrderDetails"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AmVisitDiary"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserNotification"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VisitLog"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OutstandingRmMmAm"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.RM_MM_Sale"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AMOrder"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AMVigitLog"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DealerStock_Report"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.MyTopTen"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DealerRmMm"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PartsRmMm"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CoupanComplain"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ComplainHistory"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AMCoupon"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coupon.Coupon"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DealerNameHistoryForSale"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".coupon.DirectDealerCoupon"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ContactUs"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RM_MM_OustandingDealerNameList"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CustomerVisitDiary"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.history.HistoryActivity"
+            android:label="@string/history_title"
+            android:exported="true"
+            android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.PreferencesActivity"
+            android:label="@string/preferences_name"
+            android:stateNotNeeded="true" />
+        <activity
+            android:name="com.google.zxing.client.android.share.ShareActivity"
+            android:label="@string/share_name"
+            android:screenOrientation="user"
+            android:stateNotNeeded="true"
+            android:exported="true"
+            android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SHARE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.HelpActivity"
+            android:exported="true"
+            android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Firebase Notifications -->
+        <service android:name=".service.MyFirebaseMessagingService"
+            android:exported="true"
+            >
+
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseInstanceIDService"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- DailyCallsActivity -->
+        <activity
+            android:name=".trackapp.activity.PendingCalls"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".trackapp.activity.WelcomeToCall"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".trackapp.activity.AmCallPlanner"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".trackapp.activity.TerettoryCustomersList"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".trackapp.activity.AMDailyReport"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="Daily Note"
+            ></activity>
+
+        <activity
+            android:name=".trackapp.activity.AmCallPlannerDetails"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="Daily Note"
+            ></activity>
+
+
+
+
+    </application>
+
+</manifest>

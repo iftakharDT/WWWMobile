@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_call_start_date_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:ems="10"
+        android:enabled="false"
+        android:textColor="@android:color/black" >
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/ic_call_in_progress" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/ic_call_in_progress" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/ic_call_in_progress" />
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/ic_call_in_progress" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:enabled="false"
+        android:text="@string/call_end_message"
+        android:textColor="@android:color/black" >
+    </TextView>
+    <TextView
+        android:id="@+id/tv_count_down_timer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="00:00:00"
+        android:textSize="24sp"
+        android:enabled="false"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/bgBottomNavigation"
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/iv_end_call"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_end_call"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="right"
+
+        />
+
+
+
+    </LinearLayout>
+
+

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+   >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/finalsubmit"
+        android:textColor="@color/grey"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollviewfinal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/rg_dealeredit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <RadioButton
+                    android:id="@+id/radioBtall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/all"
+                    android:textColor="@color/grey" />
+
+                <RadioButton
+                    android:id="@+id/radioBtbsale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sale"
+                    android:textColor="@color/grey" />
+
+                <RadioButton
+                    android:id="@+id/radioBtbreturn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/returntype"
+                    android:textColor="@color/grey" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/layoutdob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector"
+                    android:text="@string/search"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:width="100dp" >
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/grey"
+                android:orientation="horizontal"
+                android:weightSum="6" >
+
+                <TextView
+                    android:id="@+id/position1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/saleinvoiceno"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/partyname"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/saledate"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:text="@string/noofitem"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/saleamount"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/selectproduct"
+                    android:textColor="@color/custom_blue" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:listSelector="@drawable/list_selector"
+                android:cacheColorHint="#00000000"
+                android:clickable="true"
+                android:choiceMode="singleChoice" >
+
+            </ListView>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/submititems"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector"
+                    android:text="@string/submit"
+                    android:textColor="@color/grey" >
+                </Button>
+
+            
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+      
+
+</RelativeLayout>

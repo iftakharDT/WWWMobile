@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView android:layout_width="fill_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background">
+    
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="left"/>
+        
+        <TextView  
+            android:id="@+id/txt1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="right"/>
+        
+    </LinearLayout>
+    
+    
+     
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mobilenumber"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="left"/>
+        
+        <TextView  
+            android:id="@+id/txt2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="right"/>
+        
+    </LinearLayout>
+    
+    
+      <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="left"/>
+        
+        <TextView  
+            android:id="@+id/txt3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="right"/>
+        
+    </LinearLayout>
+    
+       <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customertype"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="left"/>
+        
+        <TextView  
+            android:id="@+id/txt4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="right"/>
+        
+    </LinearLayout>
+    
+        <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bankaccountnumber"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="left"/>
+        
+        <TextView  
+            android:id="@+id/txt5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="right"/>
+        
+    </LinearLayout>
+    
+         <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bankname"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="left"/>
+        
+        <TextView  
+            android:id="@+id/txt6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="right"/>
+        
+    </LinearLayout>
+    
+          <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/branchname"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="left"/>
+        
+        <TextView  
+            android:id="@+id/txt7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:typeface="serif"
+            android:gravity="right"/>
+        
+    </LinearLayout>
+    
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <Button
+            android:id="@+id/btn_idproofe" 
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:text="@string/idproofe"
+            android:textColor="@color/grey"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+        
+        <ImageView
+            android:id="@+id/img_idproofe"  
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_gallery"/>
+    </RelativeLayout>
+    
+    
+     <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+        
+        <Button
+              android:id="@+id/btn_addproofe"  
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:text="@string/addressproofe"
+            android:textColor="@color/grey"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+        
+        <ImageView
+            android:id="@+id/img_addproofe"  
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_gallery"/>
+    </RelativeLayout>
+    
+      <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+        >
+        
+        <Button
+              android:id="@+id/btn_bankproofe"  
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:text="@string/bankproofe"
+            android:textColor="@color/grey"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+        
+        <ImageView
+            android:id="@+id/img_bankproofe"  
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_gallery"/>
+    </RelativeLayout>
+    
+      
+       <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+        >
+        
+        <Button
+              android:id="@+id/btn_photoproofe"  
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:text="@string/photoproofe"
+            android:textColor="@color/grey"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+        
+        <ImageView
+            android:id="@+id/img_photoproofe"  
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_gallery"/>
+    </RelativeLayout>
+    
+       
+       <RelativeLayout android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+           
+           <Button android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:id="@+id/save"
+               android:layout_centerInParent="true"
+               android:text="@string/save"/>
+       </RelativeLayout>
+    
+       
+    
+
+</LinearLayout>
+</ScrollView>
+

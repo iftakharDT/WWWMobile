@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3,4,5" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+             android:background="@color/custom_blue" >
+
+            <TextView
+                android:id="@+id/position1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                            android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="@string/productcode"
+                android:textColor="@color/grey"
+                />
+
+            <TextView
+                android:id="@+id/position2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                            android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="@string/productname"
+                android:textColor="@color/grey"
+                />
+
+            <TextView
+                android:id="@+id/position3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                            android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="@string/quantity"
+                android:textColor="@color/grey"
+                />
+
+            <TextView
+                android:id="@+id/position4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                            android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="@string/unitprice"
+                android:textColor="@color/grey"
+                 />
+             <TextView
+                android:id="@+id/position5"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                            android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="@string/stockqty"
+                android:textColor="@color/grey"
+                />
+              <TextView
+                android:id="@+id/position6"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                            android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="@string/remainqty"
+                android:textColor="@color/grey"
+                />
+        </TableRow>
+    </TableLayout>

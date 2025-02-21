@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+     >
+
+    <LinearLayout
+        android:id="@+id/qlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        
+        android:weightSum="5" >
+        <TextView
+            android:id="@+id/Tv_meetingnotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/grey"
+            android:text="@string/meetingnotes"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+                android:id="@+id/editText_meetingnotes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="@string/meetingnotes"
+                android:singleLine="true"
+         
+                android:textColor="@color/custom_blue" >
+            </EditText>
+        
+        
+  <TextView
+            android:id="@+id/editText_Q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/grey"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<Spinner
+    android:id="@+id/answer_Q1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp" />
+
+ <TextView
+            android:id="@+id/editText_Q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/grey"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <Spinner
+                android:id="@+id/answer_Q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+      <TextView
+            android:id="@+id/editText_Q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/grey"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+        <Spinner
+                android:id="@+id/answer_Q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+<TextView
+            android:id="@+id/editText_Q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/grey"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Spinner
+                android:id="@+id/answer_Q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+       <TextView
+            android:id="@+id/editText_Q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/grey"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Spinner
+                android:id="@+id/answer_Q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/selector"
+            android:text="@string/submit"
+            android:textColor="@color/grey"/>
+      
+    </LinearLayout>
+
+
+    
+    
+</ScrollView>

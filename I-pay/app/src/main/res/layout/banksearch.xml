@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/banksearch"
+        android:textColor="@color/grey"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"
+        android:fillViewport="true"
+        android:orientation="vertical" 
+        android:id="@+id/scroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/select"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/ifsc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ifsc"
+                    android:textColor="@color/grey" 
+                   >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/banknamecity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/banknamecity"
+                    android:textColor="@color/grey"
+                    >
+                </RadioButton>
+            </RadioGroup>
+            <EditText
+                android:id="@+id/ifsccode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="@string/ifsc"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/custom_blue" 
+                android:visibility="gone"/>
+
+          		  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:id="@+id/banlcitylayout"
+            android:background="@drawable/background"
+             android:visibility="gone">
+          		      
+          		      <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/zone"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/zonespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+       <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/state"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/statespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+          
+             <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/city"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/cityspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+          		      <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/bankname"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/banknamespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+<!-- <TextView -->
+<!--                 android:id="@+id/textView9" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginLeft="5dp" -->
+<!--                 android:text="@string/bankcity" -->
+<!--                 android:textColor="@color/grey" -->
+<!--                 android:textSize="18sp" /> -->
+
+<!--             <Spinner -->
+<!--                 android:id="@+id/bankcityspinner" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_margin="5dp" /> -->
+          		      
+            
+          		  </LinearLayout>
+          		  
+          		  <Button
+                    android:id="@+id/banksearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/selector"
+                    android:gravity="center"
+                    android:text="@string/done"
+                    android:textColor="@color/grey" />
+          		  
+	<LinearLayout 
+     android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:id="@+id/bankdisplaylayout"
+            android:background="@drawable/background"
+           >
+    
+    <TableLayout
+        android:id="@+id/tableview"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:background="@color/custom_blue"
+        android:stretchColumns="0,1,2" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@color/custom_blue" >
+
+            <TextView
+                android:id="@+id/position1"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:text="@string/bankname"
+                android:textColor="@color/custom_blue"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/position2"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:text="@string/branchname"
+                android:textColor="@color/custom_blue"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/position3"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:text="@string/ifsc"
+                android:textColor="@color/custom_blue"
+                android:textSize="20sp" />
+
+        </TableRow>
+    </TableLayout>
+ <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="800dp"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="singleChoice" 
+        android:listSelector="#0f0"
+        >
+    </ListView>	    
+</LinearLayout>          
+	  
+        </LinearLayout>
+    </ScrollView>
+   
+
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/footer"
+        android:textColor="@color/grey" />
+
+</RelativeLayout>

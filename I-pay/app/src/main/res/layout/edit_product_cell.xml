@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_row_selector"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+<!-- android:background="@color/grey" -->
+        <TextView
+            android:id="@+id/ep_textView1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:textColor="@color/custom_blue" 
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/ep_textView2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:textColor="@color/custom_blue" 
+            android:layout_marginLeft="3dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/ep_textView3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+             android:textColor="@color/custom_blue" 
+            android:gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:id="@+id/ep_textView4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="@string/quantity"
+            android:singleLine="true"
+            android:inputType="number"
+             android:textColor="@color/custom_blue" 
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:layout_height="50dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox_delete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/trendfilter"
+    android:orientation="vertical" >
+    
+
+       
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dealerlayout"
+        android:visibility="visible"
+        android:orientation="vertical">
+        
+        
+         <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/am_stock"
+                android:id="@+id/tv_am"
+                style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/dealerspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mechaniclayout"
+        android:visibility="gone"
+        android:orientation="vertical">
+        
+        
+         <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/mechanics"
+                style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/mechanicspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+    </LinearLayout>
+   
+            
+           
+    
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/country"
+                style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/countryspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/zone"
+               	style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/zonespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/state"
+              	style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/statespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/district"
+                android:visibility="gone"
+                style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/districtspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_margin="5dp" />
+            
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/city"
+                android:id="@+id/tv_city"
+               style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/cityspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+            
+             <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/area"
+               style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/areaspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+            
+            
+    <RadioGroup
+        android:id="@+id/rg_am2_trend" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/rb_am_cfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:text="@string/cfa"
+            />
+        <RadioButton 
+            android:id="@+id/rb_am_dealer"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:text="@string/dealer"
+            />
+
+         <RadioButton 
+            android:id="@+id/rb_am_mechanic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:text="@string/mg"
+            />
+        
+    </RadioGroup>
+         <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/cfa_dealer_mg"
+               style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/cfa_dealer_mg_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+              
+            
+            <TextView  android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@android:color/darker_gray"
+                android:textColor="@color/grey"
+                android:text="@string/productfilter"/>
+           <!--  
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/product_text"
+               style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/product_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+ -->
+            <TextView
+                android:id="@+id/segment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/segment"
+               style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/segmentspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+             <TextView
+                 android:id="@+id/oe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/oe_text"
+               style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/oe_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+            
+            
+            
+             <TextView
+                 android:id="@+id/aplication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/application"
+               style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/applicationspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+         
+            
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/partno"
+                android:id="@+id/tv_partno"
+                style="@style/TextTheme" />
+             
+               <EditText
+                android:id="@+id/part_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Get Part No"
+                android:textColor="@color/bluelight"
+                android:focusable="false"
+                android:editable="false"
+                android:ems="10" >
+
+            </EditText>
+
+            <Spinner
+                android:id="@+id/partnospinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_margin="5dp" />
+            
+            
+            
+    
+</LinearLayout>

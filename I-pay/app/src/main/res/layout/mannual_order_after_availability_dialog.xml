@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="Final PO"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/white"
+
+        />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_item_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/grey"
+        android:layout_below="@+id/tv_title"
+        >
+        <!--<CheckBox
+            android:id="@+id/partCB"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Remember me"
+            android:textColor="@@android:color/white"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            />-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Part No"
+            android:layout_weight="1.5"
+            android:textColor="@color/bluelight"
+            android:layout_marginLeft="2dp"
+            android:paddingLeft="3dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Desc"
+            android:layout_weight="1.5"
+            android:textColor="@color/bluelight"
+            android:layout_marginLeft="2dp"
+            android:paddingLeft="2dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/bluelight"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/bluelight"
+            />
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_part_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/ll_item_header"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<ListView
+        android:id="@+id/list_part_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>-->
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_product_qty_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/list_part_no"
+        android:gravity="center_vertical"
+        >
+
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text="Quantity#: "
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_total_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="Amount#: "
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottomLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll_product_qty_price"
+        android:gravity="center_vertical"
+        >
+
+
+
+        <CheckBox
+            android:id="@+id/ch_order_from_plant"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:buttonTint="@color/white"
+            android:text="Order From Plant"
+            android:checked="true"
+            android:textColor="@android:color/white" />
+
+        <!--<Button
+            android:id="@+id/bt_order_by_depot"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/selector"
+            android:text="Order By Depot"
+            android:textColor="@android:color/white" />-->
+
+        <Button
+            android:id="@+id/bt_order_all"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/selector"
+            android:text="Place Order"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

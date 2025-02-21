@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="4" >
+    
+      <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/am_call_planner_details"
+        android:layout_gravity="center"
+        android:textColor="@color/grey"
+        android:layout_weight=".1"
+        android:textSize="12sp" />
+    
+     <ListView android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:id="@android:id/list"
+                android:layout_marginTop="8dp"
+                android:layout_weight="3"
+                android:listSelector="@drawable/list_selector">
+                
+            </ListView>
+
+     <Button
+         android:id="@+id/call_planner_save"
+         android:layout_width="match_parent"
+         android:layout_height="42dp"
+          android:layout_margin="10dp"
+         android:text="Save" 
+         android:background="@drawable/selector"
+         android:layout_marginBottom="10dp"
+          android:layout_weight=".5"/>
+
+</LinearLayout>

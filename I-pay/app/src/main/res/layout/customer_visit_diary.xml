@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/transparentimage">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <AutoCompleteTextView
+                android:hint="@string/delaer_oneline_am_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:completionThreshold="1"
+                android:id="@+id/et_auto_name" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:hint="@string/date"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:id="@+id/ed_date" />
+
+            <Button
+                android:text="@string/get"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector"
+                android:textColor="@color/white"
+                android:id="@+id/get_value" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/transparentimage"
+                android:weightSum="4" >
+                <TextView
+                    android:id="@+id/et_invoiceno"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/date"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/et_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text= "Call Time"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/et_document_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/meetingnotes"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/et_balance_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Action Notes"
+                    android:textColor="@android:color/white"
+                    />
+
+            </LinearLayout>
+            <com.arcis.vgil.helper.ExpandableHeightListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="@string/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector"
+                android:textColor="@color/white"
+                android:id="@+id/bt_submit" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

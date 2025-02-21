@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/background" >
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:ems="10" >
+
+    </EditText>
+    
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/grey"
+        >
+        <!--<CheckBox
+            android:id="@+id/partCB"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Remember me"
+            android:textColor="@@android:color/white"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            />-->
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Part No"
+            android:layout_weight="3"
+            android:textColor="@color/bluelight"
+            android:layout_marginLeft="2dp"
+            android:paddingLeft="3dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Desc"
+            android:layout_weight="3"
+            android:textColor="@color/bluelight"
+            android:layout_marginLeft="2dp"
+            android:paddingLeft="2dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:layout_weight="2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/bluelight"
+            />
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_part_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<ListView
+        android:id="@+id/list_part_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>-->
+
+</LinearLayout>

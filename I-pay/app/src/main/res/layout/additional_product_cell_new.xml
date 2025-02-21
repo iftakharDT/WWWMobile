@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_row_selector"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/pending_position"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1.5"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:hint="@string/pendingcode"
+            android:textColor="@color/custom_blue" />
+        <TextView
+            android:id="@+id/sku_position"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="PO"
+            android:textColor="@color/custom_blue" />
+
+        <!-- <TextView
+             android:id="@+id/git_position"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="3dp"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:hint="@string/git"
+             android:textColor="@color/custom_blue" />-->
+
+        <TextView
+            android:id="@+id/desc_position"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1.5"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:hint="Desc"
+            android:textSize="12sp"
+            android:textColor="@color/custom_blue" />
+
+        <EditText
+            android:id="@+id/quantity_position"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:hint="@string/quantity"
+            android:inputType="number"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/custom_blue" />
+
+        <ImageView
+            android:id="@+id/remove"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/delete"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/darker_gray" />
+
+
+
+</LinearLayout>

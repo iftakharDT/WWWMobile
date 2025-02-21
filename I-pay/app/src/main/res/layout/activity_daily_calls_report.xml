@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/dailyreportvisitdetail"
+        android:textColor="@color/grey"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollviewfinal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:id="@+id/startdate"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/selector"
+                    android:text="@string/date"
+                    android:textColor="@color/grey" />
+
+                <EditText
+                    android:id="@+id/editText_statrDate"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:textColor="@color/custom_blue"></EditText>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/customer"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/customerspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/purposeofvisit"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/purposeofvisitspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:id="@+id/mettingnotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:enabled="true"
+                android:hint="@string/mettingnotes" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/savecallreport"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector"
+                    android:text="@string/save"
+                    android:textColor="@color/grey" />
+
+                <Button
+                    android:id="@+id/editcallreport"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector"
+                    android:text="@string/edit"
+                    android:textColor="@color/grey" />
+
+                <Button
+                    android:id="@+id/deletecallreport"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector"
+                    android:text="@string/delete"
+                    android:textColor="@color/grey" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/darekblue"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/rollovermenu"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/partno"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+
+            <Spinner
+                android:id="@+id/partnospinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/complainapproved"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/complainapprovedspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector"
+                android:text="@string/save"
+                android:textColor="@color/grey" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

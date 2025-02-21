@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/mannual_order"
+        android:textColor="@color/grey"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Dealer Code"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/cust_code_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/mannual_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:textAllCaps="true"
+                android:hint="Customer Name" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/mannual_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:textAllCaps="true"
+                android:hint="City" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="ORDER ROLL OVER MENU"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Part No"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/mannual_part_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Part No" >
+            </EditText>
+
+            <LinearLayout
+                android:id="@+id/tableview01"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/grey"
+                android:orientation="horizontal"
+                android:weightSum="6" >
+
+                <TextView
+                    android:id="@+id/position202"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="left"
+                    android:text="@string/pendingorder"
+                    android:textColor="@color/custom_blue" />
+                <TextView
+                    android:id="@+id/sku"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="SKU"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/git"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position203"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1.5"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/inventry"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position204"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1.5"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/quantity"
+                    android:textColor="@color/custom_blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableview02"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/grey"
+                android:orientation="horizontal"
+                android:weightSum="6" >
+
+                <TextView
+                    android:id="@+id/pending_position"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:hint="@string/pendingorder"
+                    android:textColor="@color/custom_blue" />
+                <TextView
+                    android:id="@+id/sku_position"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="SKU"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/git_position"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="@string/git"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/inventry_position"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1.5"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:hint="@string/inventry"
+                    android:textColor="@color/custom_blue" />
+
+                <EditText
+                    android:id="@+id/quantity_position"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/rounded_corner"
+                    android:gravity="center"
+                    android:hint="@string/quantity"
+                    android:textColor="@color/custom_blue" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/additem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector"
+                android:text="@string/additem"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:id="@+id/tableview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/grey"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:id="@+id/position206"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/partno"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position207"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/quantity"
+                    android:textColor="@color/custom_blue" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/mannual_oder_lV"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="10dp" >
+            </ListView>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector"
+                android:text="@string/submit"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

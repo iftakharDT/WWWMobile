@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <!--<CheckBox
+        android:id="@+id/partCB"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Remember me"
+        android:textColor="@@android:color/white"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        />-->
+
+    <TextView
+        android:id="@+id/partNo_shell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Part No"
+        android:layout_weight="3"
+        android:textColor="@color/bluelight"
+        android:layout_marginLeft="2dp"
+        android:paddingLeft="3dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/descriptionTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Part No"
+        android:layout_weight="3"
+        android:textColor="@color/bluelight"
+        android:layout_marginLeft="2dp"
+        android:paddingLeft="2dp"
+        android:textSize="12sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/partQuantityET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:hint="@string/quantity"
+        android:layout_weight="2"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:textColor="@color/custom_blue" />
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

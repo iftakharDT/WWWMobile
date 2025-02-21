@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_row_selector"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/pending_position"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1.5"
+            android:background="@color/grey"
+            android:gravity="center_vertical"
+            android:hint="@string/pendingcode"
+            android:text="hhhhhh"
+            android:textColor="@color/custom_blue" />
+
+        <TextView
+            android:id="@+id/desc_position"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1.5"
+            android:background="@color/grey"
+            android:hint="Desc"
+            android:textSize="12sp"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:textColor="@color/custom_blue" />
+
+        <EditText
+            android:id="@+id/quantity_position"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:hint="@string/quantity"
+            android:inputType="number"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/custom_blue" />
+
+        <TextView
+            android:id="@+id/available"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_done_24dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/darker_gray" />
+
+
+
+</LinearLayout>

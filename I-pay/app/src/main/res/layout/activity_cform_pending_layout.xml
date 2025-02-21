@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+    
+    
+       <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/cformpending"
+        android:textColor="@color/grey"
+        android:textStyle="bold" />
+
+     <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/grey"
+                android:orientation="horizontal"
+                android:weightSum="5" >
+
+                <TextView
+                    android:id="@+id/position1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/cfaname"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/dealername"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/cformno"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/cformvalue"
+                    android:textColor="@color/custom_blue" />
+                
+                 <TextView
+                    android:id="@+id/position5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:gravity="center"
+                    android:text="@string/modeofdispatch"
+                    android:textColor="@color/custom_blue" />
+            </LinearLayout>
+
+     <ListView
+         android:id="@android:id/list"
+         android:cacheColorHint="#000000"
+         android:listSelector="@drawable/list_selector"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+     </ListView>
+            
+</LinearLayout>

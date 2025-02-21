@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "549379544976",
+    "firebase_url": "https://i-pay-18ca0.firebaseio.com",
+    "project_id": "i-pay-18ca0",
+    "storage_bucket": "i-pay-18ca0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549379544976:android:cb3657c23f72daa3",
+        "android_client_info": {
+          "package_name": "com.arcis.vgil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549379544976-abjm0uqul4v7u49q9gpncu3niacefgsf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzgix9JmH83P_iqcvM-1FQmVhe1-OHrfs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

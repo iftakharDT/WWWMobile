@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+    
+<TextView
+        android:id="@+id/welcometext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/grey"
+        android:text="@string/welcome"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/custom_blue"
+        android:textSize="20sp" />
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/welcometext"
+    android:layout_above="@+id/footer"
+    android:layout_marginBottom="5dp"
+    android:fillViewport="true" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/relationShipMngr"
+                android:gravity="left"
+                android:typeface="serif"
+                style="@style/TextTheme"/>
+            
+             <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_relationshipManager"
+                android:gravity="right"
+                style="@style/TextTheme"/>
+             
+        </LinearLayout>
+        
+         <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:gravity="left"
+                 android:typeface="serif"
+                style="@style/TextTheme"/>
+            
+             <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_name"
+                android:gravity="right"
+                style="@style/TextTheme"/>
+             
+        </LinearLayout>
+        
+         
+         <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobilenumber"
+                android:gravity="left"
+                 android:typeface="serif"
+                style="@style/TextTheme"/>
+            
+             <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_mobileno"
+                android:gravity="right"
+                style="@style/TextTheme"/>
+             
+        </LinearLayout>
+        
+         
+         <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:gravity="left"
+                 android:typeface="serif"
+                style="@style/TextTheme"/>
+            
+             <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_location"
+                android:gravity="right"
+                style="@style/TextTheme"/>
+             
+        </LinearLayout>
+        
+          <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paymenttransfercradit"
+                android:gravity="left"
+                 android:typeface="serif"
+                style="@style/TextTheme"/>
+            
+             <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_paymenttransfercradit"
+                android:gravity="right"
+                style="@style/TextTheme"/>
+             
+        </LinearLayout>
+        
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <Button
+                android:id="@+id/btn_coupon_redemption"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                  android:background="@drawable/selector4"
+                android:text="@string/couponredemptionself"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/coupon_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector2"
+                android:text="@string/couponredemptionaccount"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+             
+              <Button
+                android:id="@+id/btn_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+               android:background="@drawable/selector1"
+                android:text="@string/contact_us"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+      
+ 	       
+    </LinearLayout>
+
+</ScrollView>
+  <TextView
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/grey"
+        android:layout_alignParentBottom="true"
+        android:text="@string/footer"
+        android:textColor="@color/custom_blue" />
+</RelativeLayout>

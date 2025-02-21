@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_width="fill_parent"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+      android:background="@drawable/background"
+     >
+    
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/producttrend"
+        android:textColor="@color/grey"
+        android:textSize="20sp" />
+    <ScrollView
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_below="@+id/header"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <include layout="@layout/trend_filter_layout"/>
+        
+        
+        
+        <Button  
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search"
+            android:text="@string/search"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@drawable/selector"
+            android:textColor="@color/grey" 
+              />
+        
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+             android:weightSum="3" >
+            
+         
+            <TextView
+                    android:id="@+id/position1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:text="@string/partno"
+                    android:textColor="@color/custom_blue" />
+                <TextView
+                    android:id="@+id/position2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:text="@string/quantity"
+                    android:textColor="@color/custom_blue" />
+
+                <TextView
+                    android:id="@+id/position3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                      android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/value"
+                    android:textColor="@color/custom_blue" />
+
+        </LinearLayout>
+        
+     <ListView
+         android:layout_marginTop="3dp"
+         android:id="@android:id/list"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:cacheColorHint="@color/cachecolour"
+         android:listSelector="@drawable/list_selector" >
+         
+     </ListView>
+     
+     
+    <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/grey"
+            android:orientation="horizontal"
+             android:weightSum="3" >
+            
+         
+            <TextView
+                android:id="@+id/totalamount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:text="@string/total"
+                    android:textStyle="bold"
+                    android:textColor="@color/custom_blue" />
+                
+                  <TextView
+                    android:id="@+id/total_quantity"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/custom_blue" />
+                  
+                  
+                  <TextView
+                    android:id="@+id/total_value"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                     android:textSize="15sp"
+                    android:gravity="center"
+                     android:layout_height="match_parent"
+                    android:textColor="@color/custom_blue" />
+
+        </LinearLayout>
+     
+     
+    </LinearLayout>
+    
+
+</ScrollView>
+</RelativeLayout>
+
+
+

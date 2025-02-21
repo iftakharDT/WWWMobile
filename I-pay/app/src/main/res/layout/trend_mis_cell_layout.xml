@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="horizontal"
+    android:layout_marginTop="2dp"
+    android:weightSum="12" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="3dp"
+        android:text="@string/segment"
+        android:textColor="@color/custom_blue"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:text="@string/application"
+        android:textColor="@color/custom_blue"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/partno"
+         android:layout_marginLeft="5dp"
+        android:textColor="@color/custom_blue"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:gravity="center"
+         android:layout_marginLeft="5dp"
+        android:text="@string/name"
+        android:textColor="@color/custom_blue"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:gravity="center"
+         android:layout_marginLeft="5dp"
+        android:text="@string/country"
+        android:textColor="@color/custom_blue"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:gravity="center"
+         android:layout_marginLeft="5dp"
+        android:text="@string/zone"
+        android:textColor="@color/custom_blue"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:gravity="center"
+         android:layout_marginLeft="5dp"
+        android:text="@string/state"
+        android:textColor="@color/custom_blue"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:gravity="center"
+         android:layout_marginLeft="5dp"
+        android:text="@string/city"
+        android:textColor="@color/custom_blue"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:gravity="center"
+         android:layout_marginLeft="5dp"
+        android:text="@string/area"
+        android:textColor="@color/custom_blue"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:gravity="center"
+         android:layout_marginLeft="5dp"
+        android:text="@string/month"
+        android:textColor="@color/custom_blue"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/textView11"
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:gravity="center"
+         android:layout_marginLeft="5dp"
+        android:text="@string/sale"
+        android:textColor="@color/custom_blue"
+        android:textStyle="bold" />
+    
+     <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:gravity="center"
+         android:layout_marginLeft="5dp"
+        android:text="@string/fitment"
+        android:layout_marginRight="3dp"
+        android:textColor="@color/custom_blue"
+        android:textStyle="bold" />
+
+</LinearLayout>

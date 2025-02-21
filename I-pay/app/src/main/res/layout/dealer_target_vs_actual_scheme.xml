@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+     >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/direct_dealer_target_scheme_wise"
+        android:textColor="@color/grey"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/TextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/partnoactual" />
+
+            <Spinner
+                android:id="@+id/spinner_partno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                style="@style/TextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/shemename" />
+
+            <Spinner
+                android:id="@+id/spinner_shemename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                
+
+                <EditText
+                    android:id="@+id/et_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:textColor="@color/bluelight"
+                    android:hint="From Date" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+
+                <EditText
+                    android:id="@+id/et_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:textColor="@color/bluelight"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="To Date" >
+                </EditText>
+            </LinearLayout>
+        
+            
+        </LinearLayout>
+    </ScrollView>
+    
+             <LinearLayout
+        android:id="@+id/am_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView1"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+        <TextView
+            style="@style/TextTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text=" S No."
+            android:textColor="@color/bluelight"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/TextTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="@string/tgt"
+            android:textColor="@color/bluelight"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/TextTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="@string/act"
+            android:textColor="@color/bluelight"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/TextTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/inconachievement"
+            android:textColor="@color/bluelight"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:layout_margin="5dp"
+        android:listSelector="@drawable/list_selector"
+        android:layout_below="@+id/am_linear" >
+    </ListView>
+   
+
+</RelativeLayout>

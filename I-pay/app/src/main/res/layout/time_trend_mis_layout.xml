@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/timetrend"
+        android:textColor="@color/grey"
+        android:textStyle="bold" />
+    
+    
+    
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        
+        
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/fromdate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector"
+                    android:text="@string/startdate"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:width="100dp" >
+                </Button>
+
+                <EditText
+                    android:id="@+id/fromdatetext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:layout_marginLeft="5dp"
+                    android:hint="@string/datehint"
+                    android:textColor="@color/custom_blue" >
+                </EditText>
+                
+            </LinearLayout>
+            
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/todate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector"
+                    android:text="@string/enddate"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:width="100dp" >
+                </Button>
+
+                <EditText
+                    android:id="@+id/todatetext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="5dp"
+                    android:hint="@string/datehint"
+                    android:textColor="@color/custom_blue" >
+                </EditText>
+                
+            </LinearLayout>
+            
+    <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/country"
+                style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/countryspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/zone"
+               	style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/zonespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/state"
+              style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/statespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+           
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/city"
+               style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/cityspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+            
+             <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/area"
+               style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/areaspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+            
+            
+            
+            <TextView  android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@android:color/darker_gray"
+                android:textColor="@color/grey"
+                android:text="@string/productfilter"/>
+            
+           <!--  Segment Filter -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/segment"
+               style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/segmentspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+            
+            
+            
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/application"
+               style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/applicationspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+            
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/partno"
+                style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/partnospinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+            
+            <TextView  android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@android:color/darker_gray"
+                android:textColor="@color/grey"
+                android:text="@string/contactfilter"/>
+            
+            <!--  Contact Filter -->
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/contacttype"
+               style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/contacttypespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+            
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/contactname"
+                style="@style/TextTheme" />
+
+            <Spinner
+                android:id="@+id/contactnamespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+            
+             <Button  
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search"
+            android:text="@string/search"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@drawable/selector"
+            android:textColor="@color/grey" 
+              />
+             
+             
+             <HorizontalScrollView  android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:fillViewport="true">
+                 
+                 <LinearLayout android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/reportlayout"
+                     android:orientation="vertical">
+                     
+                     <include layout="@layout/trend_mis_cell_layout"/>
+                     
+                     
+                 </LinearLayout>
+             </HorizontalScrollView>
+            
+            </LinearLayout>
+    </ScrollView>
+    
+    
+
+</LinearLayout>

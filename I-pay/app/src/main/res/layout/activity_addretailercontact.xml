@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transparentimage" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/addretailercontact"
+        android:textColor="@color/grey"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/retailercontacttype"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/retailertypespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:id="@+id/contactname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="@string/contactname"
+                android:singleLine="true"
+                android:inputType="textCapWords"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white">
+            </EditText>
+
+            <EditText
+                android:id="@+id/garagename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="@string/companyname"
+                android:singleLine="true"
+                android:inputType="textCapWords"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/mobilenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="@string/mobilenumber"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" >
+            </EditText>
+
+           
+
+            <TextView
+                android:id="@+id/textView103"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/acctype"
+                android:visibility="gone"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/isprimary"
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/garage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/garage"
+                    android:textColor="@color/grey" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/individual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/individual"
+                    android:textColor="@color/grey" >
+                </RadioButton>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/streetaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="@string/streetaddress"
+                android:maxLines="2"
+                android:inputType="textCapWords"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/country"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/countryspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/textView109"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/zone"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/zonespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/state"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/statespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/district"
+                android:textColor="@color/grey"
+                android:visibility="gone"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/districtspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/city"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/cityspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/area"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/areaspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/pincode"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/pincodespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="@string/pincode"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Pan card"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/et_pan_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="Pan Card"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/verificationtype"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/verificationspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:id="@+id/verificationdoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="@string/verificationdoc"
+                android:maxLines="1"
+                android:inputType="textCapWords"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" >
+            </EditText>
+            
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                
+                
+                <LinearLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    
+                     <Button 
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/takephoto"
+                            android:text="@string/takephoto"
+                            android:background="@drawable/selector"
+                            android:layout_weight="1"
+                            android:textColor="@color/grey"/>
+                        
+                         <Button 
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/takephotofromgallary"
+                            android:text="@string/capturegallary"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/selector"
+                            android:layout_weight="1"
+                            android:textColor="@color/grey"/>
+              
+                </LinearLayout>
+                
+                <LinearLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                    
+                    <ImageView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_attachment"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_gallery"/>
+                </LinearLayout>
+                
+                
+              
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/authorized"
+                android:textColor="@color/grey"
+                android:visibility="gone"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/authorized"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+            
+            <RadioGroup
+                android:id="@+id/rg_bankdetails" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="vertical">
+                
+                <RadioButton
+                    android:id="@+id/rb_bankdetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bankdetails" />
+                
+                <RadioButton
+                    
+                    android:id="@+id/rb_atmdetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/atmdetails"
+                    android:layout_marginTop="5dp" />
+                
+            </RadioGroup>
+            
+            <!--  <CheckBox
+                android:id="@+id/bankdatafill"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bankdetails"
+                android:textColor="@color/grey" /> -->
+                   
+            <LinearLayout
+                android:id="@+id/bankLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/bankaccounttype"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/bankaccounttype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <EditText
+                    android:id="@+id/bankaccountholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:ems="10"
+                    android:hint="@string/bankaccountholder"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <EditText
+                    android:id="@+id/bankaccountnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:ems="10"
+                    android:hint="@string/bankaccountnumber"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/ifscsearchlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <EditText
+                        android:id="@+id/ifsccode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.5"
+                        android:enabled="false"
+                        android:hint="@string/ifsc"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" >
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/selector"
+                        android:text="@string/search"
+                        android:textColor="@color/grey" >
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/atmlayout">
+                
+                <EditText android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edttxt_atmCardNo"
+                    android:hint="@string/pleaseentercardno"
+                    android:inputType="number"
+                    android:maxLines="20"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/addretailercontact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/selector"
+                    android:gravity="center"
+                    android:text="@string/add"
+                    android:textColor="@color/grey" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/footer"
+        android:textColor="@color/grey" />
+
+</RelativeLayout>

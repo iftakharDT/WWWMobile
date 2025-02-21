@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/dailycalls"
+        android:textColor="@color/grey"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/rg_contacttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_dealer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dealer"
+                    android:textColor="@color/grey" />
+
+                <RadioButton
+                    android:id="@+id/rb_mechanic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mechanics"
+                    android:textColor="@color/grey" />
+
+                <RadioButton
+                    android:id="@+id/rb_retailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Retailer"
+                    android:textColor="@color/grey" />
+            </RadioGroup>
+
+            <!-- Search Type -->
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/search"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_searchtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_geo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/geographysearch"
+                    android:textColor="@color/grey" />
+
+                <RadioButton
+                    android:id="@+id/rb_mobileNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobilenumbersearch"
+                    android:textColor="@color/grey" />
+            </RadioGroup>
+
+            <!-- Geo Search Layout -->
+
+            <LinearLayout
+                android:id="@+id/geolayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/state"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/statespinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/city"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/cityspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/textView309"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/area"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/areaspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+
+            <!-- Mobile No Search -->
+
+            <EditText
+                android:id="@+id/edttxt_mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobilenumber"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:maxLength="10" />
+            
+            <!--   <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <Button
+                    android:id="@+id/startdate"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/selector"
+                    android:text="@string/startdate"
+                    android:textColor="@color/grey" />
+
+                <EditText
+                    android:id="@+id/editText_statrDate"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:textColor="@color/custom_blue" >
+                </EditText>
+            </RelativeLayout>
+            
+
+            <EditText
+                android:id="@+id/editText_purposeofvisit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="@string/purposeofvisit"
+                android:singleLine="true"
+                android:textColor="@color/custom_blue" >
+            </EditText>
+
+            Layout for questions
+
+            <LinearLayout
+                android:id="@+id/qlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/question1"
+                    style="@style/TextTheme"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <Spinner
+                    android:id="@+id/spinnerQ1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/editText_Q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="@string/remarks"
+                    android:singleLine="false" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/question2"
+                    style="@style/TextTheme"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <Spinner
+                    android:id="@+id/spinnerQ2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/editText_Q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="@string/remarks" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/question3"
+                    style="@style/TextTheme"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <Spinner
+                    android:id="@+id/spinnerQ2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/editText_Q3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="@string/remarks" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/question4"
+                    style="@style/TextTheme"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <Spinner
+                    android:id="@+id/spinnerQ4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/editText_Q4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="@string/remarks" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/question5"
+                    style="@style/TextTheme"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <Spinner
+                    android:id="@+id/spinnerQ5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/editText_Q5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="@string/remarks" >
+                </EditText>
+            </LinearLayout>
+
+          
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <Button
+                    android:id="@+id/starttime"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/selector"
+                    android:text="@string/time"
+                    android:textColor="@color/grey" />
+
+                <EditText
+                    android:id="@+id/editText_starttime"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:textColor="@color/custom_blue" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <Button
+                    android:id="@+id/enddate"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/selector"
+                    android:text="@string/enddate"
+                    android:textColor="@color/grey" />
+
+                <EditText
+                    android:id="@+id/editText_endDate"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:textColor="@color/custom_blue" >
+                </EditText>
+            </RelativeLayout> -->
+
+           <!--  <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <Button
+                    android:id="@+id/endtime"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/selector"
+                    android:text="@string/time"
+                    android:textColor="@color/grey" />
+
+                <EditText
+                    android:id="@+id/editText_endtime"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:textColor="@color/custom_blue" >
+                </EditText>
+            </RelativeLayout> -->
+            
+            
+                <Button
+                android:id="@+id/search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector"
+                android:text="@string/search"
+                android:textColor="@color/grey" />
+            
+            <ListView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/list"
+                android:layout_marginTop="8dp"
+                android:listSelector="@drawable/list_selector">
+                
+            </ListView>
+
+        
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

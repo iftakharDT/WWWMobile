@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/couponredemtion"
+        android:textColor="@color/grey"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/select"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/dealer_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="@string/dealer"
+                    android:textColor="@color/grey" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/machenics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mechanics"
+                    android:textColor="@color/grey" >
+                </RadioButton>
+                 <RadioButton
+                    android:id="@+id/account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account"
+                    android:textColor="@color/grey" >
+                </RadioButton>
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/mobilenumberlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/mobilenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:ems="10"
+                    android:hint="@string/couponholdermobile"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/search"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/selector"
+                    android:text="@string/search"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/rectangle"
+                android:stretchColumns="0,1"
+                android:visibility="gone" >
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#000000" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="@string/contactname"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/position2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:textColor="@color/grey" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="@string/streetaddress"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/position3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:textColor="@color/grey" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="@string/area"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/position4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:textColor="@color/grey" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="@string/city"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/position5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:textColor="@color/grey" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="@string/state"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/position6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:textColor="@color/grey" />
+                </TableRow>
+
+                <!-- <TableRow -->
+                <!-- android:id="@+id/tableRow7" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_gravity="center" -->
+                <!-- android:layout_marginLeft="5dp" -->
+                <!-- android:layout_marginRight="5dp" -->
+                <!-- > -->
+
+
+                <!-- <TextView -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_column="0" -->
+                <!-- android:layout_weight="1" -->
+                <!-- android:text="@string/pincode" -->
+                <!-- android:textColor="#000000" /> -->
+
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/position7" -->
+                <!-- android:layout_width="fill_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_column="1" -->
+                <!-- android:layout_weight="1" -->
+                <!-- android:textColor="@color/grey" /> -->
+                <!-- </TableRow> -->
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/couponlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <EditText
+                    android:id="@+id/coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:hint="@string/couponredemtion"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/cashcollected"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cashcollected"
+                    android:textColor="@color/grey"
+                    android:visibility="visible" />
+
+                <TableLayout
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:stretchColumns="0,1" >
+
+                    <TableRow
+                        android:id="@+id/tableRow11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:textColor="#000000" >
+
+                        <Button
+                            android:id="@+id/scan"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector"
+                            android:text="@string/scan"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/couponreedemed"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector"
+                            android:text="@string/add"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <include layout="@layout/coupon_redemption_cell" />
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="2dp"
+                android:cacheColorHint="@color/cachecolour"
+                android:listSelector="@drawable/list_selector" >
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                     android:textStyle="bold"
+                    android:text="@string/totalamount"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:id="@+id/totalamount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:gravity="right"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutdob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+                
+                 <Button
+                    android:id="@+id/clear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector"
+                    android:text="@string/clearList"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:width="100dp" >
+                </Button>
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector"
+                    android:text="@string/submit"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:width="100dp" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/footer"
+        android:textColor="@color/grey" />
+
+</RelativeLayout>

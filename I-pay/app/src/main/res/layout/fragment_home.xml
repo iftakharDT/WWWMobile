@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5f7"
+    android:focusableInTouchMode="true"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="#00000000"
+                >
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:hint="@string/name"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:background="#00000000"
+                    />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_add"
+                    android:elevation="8dp"
+                    android:contentDescription="@string/submit"
+                    android:layout_margin="2dp" />
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                >
+                <RadioButton android:id="@+id/radio_primary_customer"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Primary Customer"
+                    android:textSize="14sp"
+                    />
+                <RadioButton
+                    android:id="@+id/radio_secondary_customer"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Secondary Customer"
+                    android:textSize="14sp"
+                    />
+            </RadioGroup>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:layout_below="@+id/radio_group"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical" />
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/expandable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_duration="500"
+                app:el_expanded="false"
+                app:el_parallax="0.8">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/colorBackground"
+                    android:padding="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/state"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorTextDark"
+                        android:layout_marginTop="20dp"
+                        />
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_spinner"
+                        android:orientation="horizontal">
+
+
+                        <Spinner
+                            android:id="@+id/sp_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:overlapAnchor="false"
+                            android:popupBackground="@color/colorBackground"
+                            android:gravity="center"
+                            android:background="@android:color/transparent"
+                            android:spinnerMode="dropdown"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            />
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:tint="@color/primary_dark"
+                            android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@android:drawable/arrow_down_float" />
+
+                    </RelativeLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorTextDark"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_spinner"
+                        android:orientation="horizontal">
+
+
+                        <Spinner
+                            android:id="@+id/sp_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:overlapAnchor="false"
+                            android:popupBackground="@color/colorBackground"
+                            android:gravity="center"
+                            android:background="@android:color/transparent"
+                            android:spinnerMode="dropdown"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            />
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:tint="@color/primary_dark"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@android:drawable/arrow_down_float" />
+
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:id="@+id/iv_close_expandable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_gravity="end"
+                        android:tint="@color/red"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        />
+
+                </LinearLayout>
+
+            </net.cachapa.expandablelayout.ExpandableLayout>
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+

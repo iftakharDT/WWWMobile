@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1" 
+        >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+              android:textColor="#000000" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/contactname" 
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/position2"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/contacttype" 
+                  android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/position3"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/mobilenumber"
+                  android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/position4"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/streetaddress" 
+                  android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/position5"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" 
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/area"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/position6"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey" />
+        </TableRow>
+    <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/city"
+                  android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/position7"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/state" 
+                  android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/position8"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" 
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/zone"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/position9"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+             >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/country" 
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/position10"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" 
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/pincode"
+                
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/position11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey"
+                 />
+        </TableRow>
+ 
+<!-- <TableRow -->
+<!--             android:id="@+id/tableRow12" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center" -->
+<!--             android:layout_margin="5dp"  -->
+<!--             > -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_column="0" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:text="@string/productsegment" -->
+                
+<!--                 android:textColor="#000000" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/position12" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_column="1" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:textColor="@color/grey" -->
+<!--                  /> -->
+<!--         </TableRow> -->
+<!--         *** -->
+<!--         <TableRow -->
+<!--             android:id="@+id/tableRow13" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center" -->
+<!--             android:layout_margin="5dp"  -->
+<!--             > -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_column="0" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:text="@string/productoe" -->
+                
+<!--                 android:textColor="#000000" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/position13" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_column="1" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:textColor="@color/grey" -->
+<!--                  /> -->
+<!--         </TableRow> -->
+<!--         <TableRow -->
+<!--             android:id="@+id/tableRow14" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center" -->
+<!--             android:layout_margin="5dp"  -->
+<!--             > -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_column="0" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:text="@string/authorized" -->
+                
+<!--                 android:textColor="#000000" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/position14" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_column="1" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:textColor="@color/grey" -->
+<!--                  /> -->
+<!--         </TableRow> -->
+<!--         <TableRow -->
+<!--             android:id="@+id/tableRow15" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center" -->
+<!--             android:layout_margin="5dp"  -->
+<!--             > -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_column="0" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:text="@string/producttype" -->
+                
+<!--                 android:textColor="#000000" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/position15" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_column="1" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:textColor="@color/grey" -->
+<!--                  /> -->
+<!--         </TableRow> -->
+<!--         <TableRow -->
+<!--             android:id="@+id/tableRow16" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center" -->
+<!--             android:layout_margin="5dp"  -->
+<!--             > -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_column="0" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:text="@string/productsubtype" -->
+                
+<!--                 android:textColor="#000000" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/position16" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_column="1" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:textColor="@color/grey" -->
+<!--                  /> -->
+<!--         </TableRow> -->
+<!--         <TableRow -->
+<!--             android:id="@+id/tableRow17" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center" -->
+<!--             android:layout_margin="5dp"  -->
+<!--             > -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_column="0" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:text="@string/productapplication" -->
+                
+<!--                 android:textColor="#000000" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/position17" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:layout_column="1" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:textColor="@color/grey" -->
+<!--                  /> -->
+<!--         </TableRow> -->
+        <TableRow
+            android:id="@+id/tableRow18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" 
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/bankaccountholder"
+                
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/position18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey"
+                 />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" 
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/bankname"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/position19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey"
+                 />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" 
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/branchname"
+                
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/position20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey"
+                 />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" 
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/bankifsc"
+                
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/position21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey"
+                 />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" 
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/bankaccounttype"
+                
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/position22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey"
+                 />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" 
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="@string/bankaccountnumber"
+                
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/position23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:textColor="@color/grey"
+                 />
+        </TableRow>
+        
+    </TableLayout>
+
+</ScrollView>

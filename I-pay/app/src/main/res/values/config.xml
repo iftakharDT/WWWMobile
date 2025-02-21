@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Production IP For client -->
+    <string name="ipaddress">https://aiplindia.arcise.in/AndroidServices/</string>
+    <string name="application_version">1.1.1.4</string>
+
+
+    <!--&lt;!&ndash; Test IP For cloud &ndash;&gt;
+    <string name="ipaddress">https://aiplaftermarket.anandgroupindia.com/AndroidServices/</string>
+    <string name="application_version">1.1.1.2</string>-->
+
+
+
+
+    <string name="soapcomponent">IAndroid/</string>
+    <string name="soapcomponent_sale">IAndroidSale/</string>
+    <string name="soapcomponent_androidmis">IAndroidMIS/</string>
+    <string name="soapcomponent_mis">IMIS_AndroidLandingScreens/</string>
+
+    <string name="nameSpace">http://tempuri.org/</string>
+    <string name="locallySavingLocation">/VGIL/data</string>
+
+    <string name="webService">Android.svc</string>
+    <string name="Webservice_Sale">AndroidSale.svc</string>
+    <string name="Webservice_mis">MIS_AndroidLandingScreens.svc</string>
+    <string name="Webservice_mis_android">AndroidMIS.svc</string>
+
+</resources>

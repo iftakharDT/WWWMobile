@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="4"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_spinner"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/sp_agenda"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:overlapAnchor="false"
+            android:popupBackground="@color/colorBackground"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:spinnerMode="dropdown"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tint="@color/primary_dark"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@android:drawable/arrow_down_float" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:hint="Comment"
+        android:inputType="textMultiLine"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        >
+    </EditText>
+
+    <ImageView
+        android:id="@+id/iv_start_call"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_out_call"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+
+
+
+
+</LinearLayout>

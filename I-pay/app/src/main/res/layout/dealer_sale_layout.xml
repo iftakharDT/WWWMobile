@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/productdetailswithstock"
+        android:textColor="@color/grey"
+        android:textStyle="bold" />
+    
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+        
+        
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            
+              <TextView
+        android:id="@+id/txtview_saletype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/saletype"
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
+
+    <RadioGroup
+        android:id="@+id/dealertype"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioBtbsale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/sale"
+            android:textColor="@color/grey" />
+
+        <RadioButton
+            android:id="@+id/radioBtbreturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="37dp"
+            android:text="@string/returntype"
+            android:textColor="@color/grey" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layoutdob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:text="@string/date"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:width="100dp" >
+        </Button>
+
+        <EditText
+            android:id="@+id/datetext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:enabled="false"
+            android:hint="@string/datehint"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white" >
+        </EditText>
+
+        <Button
+            android:id="@+id/submitdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:text="@string/submit"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:width="100dp" >
+        </Button>
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/partno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="search product code"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:weightSum="11" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/productcode"
+            android:textColor="@color/custom_blue" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:text="@string/itemname"
+            android:textColor="@color/custom_blue" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:layout_marginLeft="2dp"
+            android:text="@string/clasification"
+            android:textColor="@color/custom_blue" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:layout_marginLeft="2dp"
+            android:text="@string/unitprice"
+            android:textColor="@color/custom_blue" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:layout_marginLeft="2dp"
+            android:text="@string/targetStock"
+            android:textColor="@color/custom_blue" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:layout_marginLeft="2dp"
+            android:text="@string/currentstock"
+            android:textColor="@color/custom_blue" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/red"
+             android:layout_marginLeft="2dp"
+            android:textColor="@color/custom_blue" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/yellow"
+             android:layout_marginLeft="2dp"
+            android:textColor="@color/custom_blue" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/green"
+             android:layout_marginLeft="2dp"
+            android:textColor="@color/custom_blue" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:layout_marginLeft="2dp"
+            android:text="@string/solldqty"
+            android:textColor="@color/custom_blue" />
+        
+         <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:layout_marginLeft="2dp"
+            android:text="@string/sale"
+            android:textColor="@color/custom_blue" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_marginTop="2dp"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:listSelector="@drawable/list_selector" >
+    </ListView>
+            
+       
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        
+        <TextView  android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text="@string/amount"
+            style="@style/TextTheme"/>
+        
+        <TextView  android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalamount"
+            style="@style/TextTheme"
+            android:gravity="right"/>
+        
+    </LinearLayout>
+    
+      
+        <Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:text="@string/save"
+            android:id="@+id/save"
+            android:textColor="@color/grey"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+  
+</LinearLayout>

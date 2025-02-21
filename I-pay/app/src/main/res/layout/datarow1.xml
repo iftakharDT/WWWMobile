@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0,1,2" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/custom_blue" >
+
+        <TextView
+            android:id="@+id/position1"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/position2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:text="Mobile"
+            android:textColor="@color/grey"
+            android:textSize="16sp"  />
+
+        <TextView
+            android:id="@+id/position3"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:text="Email"
+            android:textColor="@color/grey" 
+            android:textSize="16sp" />
+
+
+    </TableRow>
+
+</TableLayout>

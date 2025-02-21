@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/I-pay.iml" filepath="$PROJECT_DIR$/I-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/I-pay.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/I-pay.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/I-pay.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/I-pay.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/I-pay.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/I-pay.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/I-pay.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/I-pay.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/captureActivity/I-pay.captureActivity.iml" filepath="$PROJECT_DIR$/.idea/modules/captureActivity/I-pay.captureActivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/captureActivity/I-pay.captureActivity.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/captureActivity/I-pay.captureActivity.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/captureActivity/I-pay.captureActivity.main.iml" filepath="$PROJECT_DIR$/.idea/modules/captureActivity/I-pay.captureActivity.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/captureActivity/I-pay.captureActivity.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/captureActivity/I-pay.captureActivity.unitTest.iml" />
+    </modules>
+  </component>
+</project>

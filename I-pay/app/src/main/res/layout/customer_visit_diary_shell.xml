@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/et_date"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/et_call"
+        android:gravity="center_horizontal"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/e_meetingnotes"
+        android:layout_weight="1" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:inputType="none"
+        android:clickable="false"
+        android:ems="10"
+        android:id="@+id/et_activ_notes"
+        android:hint="Active Notes"
+        android:enabled="false"
+        android:focusable="false"
+        android:layout_weight="1" />
+
+
+</LinearLayout>
